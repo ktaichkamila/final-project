@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bookmark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <header>
+        <h1>My Bookmarks </h1>
+    </header>
+    <main>
+        <section class="input-container">
+            <section class="title-container">
+                <label for="title_input">Title</label><br>
+                <input type="text" id="title_input" placeholder="Enter Website Title" title="Please fill out the title" required/> <br>
+            </section>
+            <section class="url-container">
+                <label for="url_input">URL</label><br>               
+                <input type="url" id="url_input" title="Please fill out the url" placeholder="Enter Website URL" required/><br>
+            </section>
+            <section>
+                <button id="toggle_theme" title="Toggle light/dark">🌙</button>
+                <button id="add_btn">+ Add</button>
+             </section>
+        </section>
+        <section class="bookmarks">
+            <ul id="bookmark_list">
+            </ul>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
